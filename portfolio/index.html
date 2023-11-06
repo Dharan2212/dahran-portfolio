@@ -1,30 +1,46 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- logo image -->    
+    <link rel="shortcut icon" type="image/webp" href="images/logo.webp">
     <title>Portfolio</title>
+    
     <!-- font awesome cdn link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    
     <!-- custom css file link  -->
     <link rel="stylesheet" type="text/css" href="styles.css">
+    
     <!-- css animation link  -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     
 <!-- header section starts  -->
+
 <header>
     <div class="user">
-        <img src="images/me.jpg" data-aos="fade-down-right" alt="">
+        <img src="images/me.png" data-aos="fade-down-right" alt="">
         <h3 class="name">Damodharan A</h3>
-        <p class="post">Web developer | Designer</p>
+        <p class="post">Web developer | SEO</p>
+        <ul class="sci">
+            <li><a href="https://api.whatsapp.com/send?phone=6385501312" class="fab fa-whatsapp"></a></li>
+            <li><a href="https://www.linkedin.com/in/damodharan-a-24826424a/"><ion-icon name="logo-linkedin"></ion-icon></a></li>   
+            <li><a href="https://github.com/Dharan2212"><ion-icon name="logo-github"></ion-icon></a></li>
+            <li><a href="https://www.instagram.com/dharan_reddy47/"><ion-icon name="logo-instagram"></ion-icon></a></li>
+        </ul>
     </div>
     <nav class="navbar">
         <ul>
             <li><a href="#home">home</a></li>
             <li><a href="#about">about</a></li>
             <li><a href="#education">education</a></li>
+            <li><a href="#awards">awards</a></li>
             <li><a href="#portfolio">portfolio</a></li>
             <li><a href="#contact">contact</a></li>
         </ul>
@@ -32,47 +48,75 @@
 </header>
 
 <!-- header section ends -->
+
 <div id="menu" class="fas fa-bars"></div>
+
 <!-- home section starts  -->
+
 <section class="home" id="home">
     <h3 data-aos="fade-right">HI THERE !</h3>
     <h1 data-aos="fade-left">I'M <span>Damodharan</span></h1>
-    <p data-aos="zoom-in">I consider my self a responsible and orderly person I am looking toward for 
-        my first work experience</p>
+    <p data-aos="zoom-in">I pride myself on being a responsible and highly organized individual. I am enthusiastically seeking my first professional work experience with a strong commitment to making a positive impact</p>
     <a href="#about"><button class="btn" data-aos="zoom-in">about me <i class="fas fa-user"></i></button></a>
 </section>
 
 <!-- home section ends -->
 
 <!-- about section starts  -->
+
 <section class="about" id="about">
 <h1 class="heading" data-aos="fade-right"> <span>about</span> me </h1>
 <div class="row">
+    <div id="storyModal" class="modal">
+              <div class="modal-content">
+                <span class="close">&times;</span>
+                <h1><strong>My Story</strong></h1>
+
+                <p>Hello, my name is Damodharan, and I am a mechanical engineering student at St. Joseph's College of Engineering in Chennai. Before pursuing my BE, I completed my diploma in mechanical engineering.</p><br>
+
+                <p>During my time as a Quality Inspector at Hamilton Houseware Pvt. Ltd, I gained practical experience in ensuring product compliance with specific requirements and maintaining superior quality standards.</p><br>
+
+                <p>In addition to my academic pursuits, I actively contribute to two initiatives aimed at empowering students and working professionals to enhance their skills and advance their careers. Through the GIT Students Career Club and Krishna Project Centre, I provide valuable resources and create opportunities for growth and development.</p><br>
+
+                <p>In my quest for personal and professional growth, I constantly seek out new challenges and opportunities. This has led me to participate in numerous competitions, symposiums, and hackathons held at various colleges and locations. I take great pride in my accomplishments, having secured victories in multiple events, which have helped me cultivate a diverse skill set and expand my knowledge.</p><br>
+
+                <p>Web development stands out as a core area of interest and expertise for me. Proficient in several programming languages, including HTML, CSS, JavaScript, Java, C, and React, I have successfully created over twelve websites that serve as a testament to my skills and passions.</p><br>
+
+                <p>Moreover, I am particularly proud of my mechanical projects. For instance, the "Seed Sowing Vehicle" demonstrates my ability to apply mechanical engineering principles to real-world problems. Another noteworthy project of mine is the "Tri-Wheel Stair Climber," designed to facilitate safe transportation of items on stairs, minimizing the risk of accidents. These projects reflect my dedication to developing innovative solutions for practical challenges.</p><br>
+
+                <p>I am excited about the future and eager to take on new endeavors that allow me to further contribute to my field. Thank you for taking the time to learn about my journey and accomplishments. If you have any questions or would like to connect, please feel free to reach out.</p><br>
+
+              </div>
+            </div>
     <div class="info" data-aos="zoom-in-down">
-        <h3> <span> name : </span> Damodharan A </h3>
-        <h3> <span> age : </span> 21 </h3>
-        <h3> <span> qualification : </span> BE </h3>
-        <h3> <span> post : </span> Web developer </h3>
+        <h3> <span> name : </span> Damodharan A</h3>
+        <h3> <span> age : </span> 21</h3>
+        <h3> <span> qualification : </span> BE</h3>
+        <h3> <span> post : </span> Web developer</h3>
         <h3> <span> language : </span> English,Telugu,Tamil</h3>
-        <a href="https://drive.google.com/file/d/1ZvUGTTp2ImgKMtkGpMu5X4xFoQ9mKGl1/view?usp=drivesdk" target="_blank"><button class="btn"> download CV <i class="fas fa-download"></i> </button></a>
+        <a href="https://drive.google.com/file/d/1KeQvM5KTKgf2Fke8zECPGfr3QCxMpAN-/view?usp=sharing" target="_blank"><button style="background: #00FF00; font-weight: 800;" class="btn"> download CV <i class="fas fa-download"></i> </button></a><br><br>
+
+        <button id="storyButton" class="btn">Read My Story</button>
+
+            
     </div>
     <div class="counter" data-aos="flip-left"
     data-aos-easing="ease-out-cubic"
     data-aos-duration="2000">
         <div class="box">
-            <span class="num" data-val="3">3+</span>
+            <span class="num" data-val="10">10+</span>
             <h3>Months of experience</h3>
         </div>
         <div class="box">
-            <span class="num" data-val="2">2+</span>
-            <h3>porject completed</h3>  
+            <span class="num" data-val="8">12+</span>
+            <h3>project completed</h3>  
         </div>
         <div class="box">
-            <span class="num" data-val="1">1+</span>
+            <span class="num" data-val="1">4+</span>
             <h3>happy clients</h3>
         </div>
         <div class="box">
-            <span class="num" data-val="4">4+</span>
+            <span class="num" data-val="7">7+</span>
             <h3>awards won</h3>
         </div>
     </div>
@@ -90,48 +134,185 @@
         <i class="fas fa-graduation-cap"></i>
         <span>2017</span>
         <h3>SSLC 10th</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quos alias praesentium.
-             Id autem provident laborum quae, distinctio eaque temporibus!</p>
+        <p>10th, Dharmamurthi Rao Bahadur Calavala Cunnan Chetty's Hindu Higher
+            Seconary School, Tiruvallur</p>
     </div>
     <div class="box">
         <i class="fas fa-graduation-cap"></i>
         <span>2019</span>
         <h3>HSC 12th</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quos alias praesentium. 
-            Id autem provident laborum quae, distinctio eaque temporibus!</p>
+        <p>Government Boys Higher Secondary School, Madharpakkam</p>
     </div>
     <div class="box">
-        <i class="fas fa-graduation-cap"></i>
+        <i class="fas fa-graduation-cap"></i> 
         <span>2021</span>
-        <h3>diploma in mechanical</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quos alias praesentium.
-             Id autem provident laborum quae, distinctio eaque temporibus!</p>
+        <h3>diploma in mechanical engineering</h3>
+        <p>Sri durga devi polytechnic collage, kavaraipettai</p>
     </div>
     <div class="box">
         <i class="fas fa-graduation-cap"></i>
         <span>2021</span>
         <h3>java fullstack</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quos alias praesentium. 
-            Id autem provident laborum quae, distinctio eaque temporibus!</p>
+        <p>Pantech E Learning Private Limited T. Nagar, Chennai, Tamil Nadu </p>
     </div>
     <div class="box">
         <i class="fas fa-graduation-cap"></i>
         <span>2021</span>
-        <h3>fullstack web developor</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quos alias praesentium. 
-            Id autem provident laborum quae, distinctio eaque temporibus!</p>
+        <h3>fullstack Web Development</h3>
+        <p>Pantech E Learning Private Limited T. Nagar, Chennai, Tamil Nadu </p>
     </div>
     <div class="box">
         <i class="fas fa-graduation-cap"></i>
         <span>2024</span>
         <h3>BE in machanical engineering</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quos alias praesentium.
-             Id autem provident laborum quae, distinctio eaque temporibus!</p>
+        <p>St. joseph's collage of engineering, OMR chennai Tamil nadu </p>
     </div>
 </div>
 </section>
 
 <!-- education section ends -->
+
+<!-- Archievement section ends -->
+    <h1 class="heading" data-aos="fade-right" id="awards"> my <span>Achievements</span> </h1>
+
+<section class="achievements">
+      <ul>
+        
+        <li>
+            <span class="achievement-name">national level Symposium Winner</span>
+            <span class="achievement-date">April 2023</span>
+            <span class="achievement-description">Won the first prize in a 2-hours hackathon organized by Jeppiaar Engineering College</span>
+        </li>
+        <li>
+            <span class="achievement-name">IIT Webify competition Winner</span>
+            <span class="achievement-date">Feb 2023</span>
+            <span class="achievement-description">Won the third prize in a one week hackathon organized by IIT PALAKKAD KERALA</span>
+          </li>
+        <li>
+          <span class="achievement-name">national level Symposium Winner</span>
+          <span class="achievement-date">Feb 2023</span>
+          <span class="achievement-description">Won the first prize in a 2-hours hackathon organized by DWARAKA DOSS GOVERDHAN DOSS VAISHNAV COLLAGE</span>
+        </li>
+        <li>
+          <span class="achievement-name">national level Symposium Winner</span>
+          <span class="achievement-date">Oct 2022</span>
+          <span class="achievement-description">Won the Second prize in a 1-hours hackathon organized by R.M.K COLLAGE OF ENGINEERING AND TECHNOLOGY</span>
+        </li>
+        <li>
+          <span class="achievement-name">national level Telecalling Winner</span>
+          <span class="achievement-date">Nov 2022</span>
+          <span class="achievement-description">Won the first prize in a symposium Telecalling organized by  J.N.N INSTITUTE OFENGINEERING</span>
+        </li>
+        <li>
+          <span class="achievement-name">national level Technical Quiz Winner</span>
+          <span class="achievement-date">Nov 2022</span>
+          <span class="achievement-description">Won the Second prize in a 2-hours hackathon organized by  J.N.N INSTITUTE OFENGINEERING</span>
+        </li>
+        <li>
+          <span class="achievement-name">national level CAD Mastro Winner</span>
+          <span class="achievement-date">April 2022</span>
+          <span class="achievement-description">Won the first prize in a 1-hours CAD 3D Design symposium organized by ST.JOSEPH COLLEGE OF ENGINEERING</span>
+        </li>
+      </ul>
+</section>
+
+<!-- Archievement section ends -->
+
+<!-- Achievement section starts -->
+<!-- <h1 class="heading" data-aos="fade-right" id="awards"> my <span>Achievements</span> </h1>
+
+<section class="achievements">
+    <ul>
+        <li>
+            <div class="achievement-details">
+                <div class="achievement-image">
+                    <img src="images/design.png" alt="IIT Webify Winner" data-index="0">
+                </div>
+                <div class="achievement-info">
+                    <span class="achievement-name">IIT Webify Competition Winner</span>
+                    <span class="achievement-date">Feb 2023</span>
+                    <span class="achievement-description">Won the third prize in a one-week hackathon organized by IIT PALAKKAD KERALA</span>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="achievement-details">
+                <div class="achievement-image">
+                    <img src="images/design.png" alt="IIT Webify Winner" data-index="1">
+                </div>
+                <div class="achievement-info">
+                    <span class="achievement-name">National Level Symposium Winner</span>
+                    <span class="achievement-date">Feb 2023</span>
+                    <span class="achievement-description">Won The First Prize In A 2-Hours Hackathon Organized By DWARAKA DOSS GOVERDHAN DOSS VAISHNAV COLLAGE</span>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="achievement-details">
+                <div class="achievement-image">
+                    <img src="images/design.png" alt="IIT Webify Winner" data-index="2">
+                </div>
+                <div class="achievement-info">
+                    <span class="achievement-name">National Level Symposium Winner</span>
+                    <span class="achievement-date">Oct 2022</span>
+                    <span class="achievement-description">Won The Second Prize In A 1-Hours Hackathon Organized By R.M.K COLLAGE OF ENGINEERING AND TECHNOLOGY</span>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="achievement-details">
+                <div class="achievement-image">
+                    <img src="images/design.png" alt="IIT Webify Winner" data-index="3">
+                </div>
+                <div class="achievement-info">
+                    <span class="achievement-name">National Level Telecalling Winner</span>
+                    <span class="achievement-date">Nov 2022</span>
+                    <span class="achievement-description">Won The First Prize In A Symposium Telecalling Organized By J.N.N INSTITUTE OFENGINEERING</span>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="achievement-details">
+                <div class="achievement-image">
+                    <img src="images/design.png" alt="IIT Webify Winner" data-index="4">
+                </div>
+                <div class="achievement-info">
+                    <span class="achievement-name">National Level Technical Quiz Winner</span>
+                    <span class="achievement-date">Nov 2022</span>
+                    <span class="achievement-description">Won The Second Prize In A 2-Hours Hackathon Organized By J.N.N INSTITUTE OFENGINEERING</span>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="achievement-details">
+                <div class="achievement-image">
+                    <img src="images/design.png" alt="IIT Webify Winner" data-index="5">
+                </div>
+                <div class="achievement-info">
+                    <span class="achievement-name">National Level CAD Mastro Winner</span>
+                    <span class="achievement-date">April 2022</span>
+                    <span class="achievement-description">Won The First Prize In A 1-Hours CAD 3D Design Symposium Organized By ST.JOSEPH COLLEGE OF ENGINEERING</span>
+                </div>
+            </div>
+        </li>
+
+       
+       
+    </ul>
+
+    
+    <img src="images/club.webp" alt="IIT Webify Winner" data-index="0">
+    <img src="images/design.png" alt="IIT Webify Winner" data-index="1">
+    <img src="images/logo.webp" alt="IIT Webify Winner" data-index="2">
+    <img src="images/club.webp" alt="IIT Webify Winner" data-index="3">
+    <img src="images/game.avif" alt="IIT Webify Winner" data-index="4">
+
+
+</section>
+ -->
+
+
+
 
 <!-- portfolio section starts  -->
 
@@ -139,46 +320,53 @@
 <h1 class="heading" data-aos="fade-right"> my <span>portfolio</span> </h1>
 <div class="box-container">
     <div class="box1">
-        <img src="images/portfolio.svg" alt="">
+        <img src="images/aard.png" alt="">
         <figcaption>
-            <h3>View more</h3>
+            <h3>Analytics Avenue</h3>
         </figcaption>
-        <a href="https://gitcareerclub.000webhostapp.com/"></a>
+        <a href="https://analyticsavenue.in/" target="_blank"></a>
     </div>
     <div class="box1">
-        <img src="images/portfolio.svg" alt="">
+        <img src="images/club.webp" alt="">
         <figcaption>
-            <h3>View more</h3>
+            <h3>Club Website</h3>
         </figcaption>
-        <a href="https://gmail2846930.autodesk360.com/g/shares/SH9285eQTcf875d3c5397918c46e0c5e977a"></a>
+        <a href="https://git-career.netlify.app/" target="_blank"></a>
     </div>
     <div class="box1">
-        <img src="images/portfolio.svg" alt="">
+        <img src="images/design.png" alt="">
         <figcaption>
-            <h3>View more</h3>
+            <h3>Fusion 360 Design</h3>
         </figcaption>
-        <a href="https://dharan-portfolio.netlify.app/"></a>
+        <a href="https://gmail2846930.autodesk360.com/g/shares/SH9285eQTcf875d3c5397918c46e0c5e977a" target="_blank"></a>
     </div>
     <div class="box1">
-        <img src="images/portfolio.svg" alt="">
+        <img src="images/project.png" alt="">
         <figcaption>
-            <h3>View more</h3>
+            <h3>Krishna's Project Center</h3>
         </figcaption>
-        <a href="https://github.com/Dharan2212"></a>
+        <a href="https://krishnas-center.netlify.app/"></a>
     </div>
     <div class="box1">
-        <img src="images/portfolio.svg" alt="">
+        <img src="images/movie.png" alt="">
         <figcaption>
-            <h3>View more</h3>
+            <h3>Movie Website</h3>
         </figcaption>
-        <a href="https://dharan-portfolio.netlify.app/"></a>
+        <a href="https://binge-movies.netlify.app/" target="_blank"></a>
     </div>
     <div class="box1">
-        <img src="images/portfolio.svg" alt="">
+        <img src="images/freelancing.webp" alt="">
         <figcaption>
-            <h3>View more</h3>
+            <h3>HODO's Tech Solutions</h3>
         </figcaption>
-        <a href="https://dharan-portfolio.netlify.app/"></a>
+        <a href="https://hodos.netlify.app/" target="_blank"></a>
+    </div>
+    <div class="box1">
+        <img src="images/game.avif" alt="">
+        <figcaption>
+            <h3>Rack Paper Game Website</h3>
+        </figcaption>
+        <a href="https://rock-paper-dharan.netlify.app" target="_blank"></a>
     </div>
 </div>
 </section>
@@ -198,6 +386,13 @@
             </i> damodharan.a47@gmail.com</h3></a>
             <a href="telto:6385501313"><h3><i class="fas fa-phone"></i> +91-6385501312</h3></a>
             <h3><i class="fas fa-map-marker-alt"></i> tamil nadu, india - 601202.</h3>
+            <ul class="sci">
+                <li><a href="https://www.instagram.com/dharan_reddy47/"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                <a href="https://api.whatsapp.com/send?phone=6385501312" class="fab fa-whatsapp"></a>
+                <li><a href="https://www.linkedin.com/in/damodharan-a-24826424a/"><ion-icon name="logo-linkedin"></ion-icon></a></li>   
+                <li><a href="https://github.com/Dharan2212"><ion-icon name="logo-github"></ion-icon></a></li>
+                <li><a href="https://www.facebook.com/lovely.dhamu.399"><ion-icon name="logo-facebook"></ion-icon></a></li>
+            </ul>
         </div>
     </div>
 
@@ -226,13 +421,17 @@
 </div>
 
 <!-- jquery cdn link  -->
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
 <!-- custom js file link  -->
+
 <script src="script.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
     AOS.init();
   </script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
